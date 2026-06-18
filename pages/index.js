@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,7 +12,11 @@ export default function Home() {
           content="Aprende técnicas de SEO, optimización web y rendimiento utilizando Next.js."
         />
 
-        <meta name="google-site-verification" content="t8z-LsOfeX5PCb_gev-IgYAz9IITEqqVEAbbAb5NtRc" />
+        <meta
+          name="google-site-verification"
+          content="t8z-LsOfeX5PCb_gev-IgYAz9IITEqqVEAbbAb5NtRc"
+        />
+
         <meta
           property="og:title"
           content="Mi Sitio Optimizado con Next.js"
@@ -24,11 +29,26 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="/images/seo-image.png"
+          content="https://mi-proyecto-seo-seven.vercel.app/images/seo-image.png"
         />
       </Head>
 
-      <h1>Inicio</h1>
+      <main
+        style={{
+          textAlign: "center",
+          padding: "40px",
+        }}
+      >
+        <h1>Inicio</h1>
+
+        <Image
+          src="/images/seo-image.png"
+          alt="Imagen SEO"
+          width={600}
+          height={400}
+          priority
+        />
+      </main>
     </>
   );
 }
