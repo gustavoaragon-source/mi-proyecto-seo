@@ -11,6 +11,7 @@ export default function Home() {
           content="Aprende técnicas de SEO, optimización web y rendimiento utilizando Next.js."
         />
 
+        <meta name="google-site-verification" content="t8z-LsOfeX5PCb_gev-IgYAz9IITEqqVEAbbAb5NtRc" />
         <meta
           property="og:title"
           content="Mi Sitio Optimizado con Next.js"
